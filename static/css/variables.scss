@@ -1,0 +1,62 @@
+// 色彩体系
+$grey-1: #ffffff;
+$grey-2: #fafafa;
+$grey-3: #f5f5f5;
+$grey-4: #e8e8e8;
+$grey-5: #d9d9d9;
+$grey-6: #bfbfbf;
+$grey-7: #8c8c8c;
+$grey-8: #595959;
+$grey-9: #262626;
+$grey-10: #000000;
+
+// 字体大小
+$mainFontSize: 14px;
+$defaultFontSize1: 12px;
+$defaultFontSize2: 14px;
+$defaultFontSize3: 16px;
+$defaultFontSize4: 18px;
+$defaultFontSize5: 20px;
+$defaultFontSize6: 22px;
+$defaultFontSize7: 24px;
+
+// 字体颜色
+// 浅色背景下
+$titleBlack: rgba(0, 0, 0, .85);
+$primaryTextBlack: rgba(0, 0, 0, .65);
+$secondaryTextBlack: rgba(0, 0, 0, .45);
+$disableBlack: rgba(0, 0, 0, .25);
+$borderBlack: rgba(0, 0, 0, .15);
+$dividersBlack: rgba(0, 0, 0, .09);
+$backgroundBlack: rgba(0, 0, 0, .04);
+$tableHeaderBlack: rgba(0, 0, 0, .02);
+
+// 深色背景下
+$titleWhite: rgba(255, 255, 255, .85);
+$primaryTextWhite: rgba(255, 255, 255, .65);
+$secondaryTextWhite: rgba(255, 255, 255, .45);
+$disableWhite: rgba(255, 255, 255, .25);
+$borderWhite: rgba(255, 255, 255, .15);
+$dividersWhite: rgba(255, 255, 255, .09);
+$backgroundWhite: rgba(255, 255, 255, .04);
+$tableHeaderWhite: rgba(255, 255, 255, .02);
+
+// 最佳字节于行高比，*显示器阅读距离（50 cm）以及最佳阅读角度（0.3）
+@mixin BaseFontSize($size) {
+  font-size: $size;
+  line-height: $size + 8px;
+}
+
+// 字体重量，*中文两种字体重量分别对应代码中的 400 和 500，在英文字体加粗采用 semibold 的字体重量，对应代码中的 600。
+@mixin FontWeight($weight) {
+  @if $weight == regular {
+    font-weight: 400;
+  }
+  @else if $weight == medium {
+    font-weight: 500;
+  }
+  @else if $weight == semibold {
+    font-weight: 600;
+  }
+}
+
