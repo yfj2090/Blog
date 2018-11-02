@@ -3,9 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import '../static/css/style.scss'
+import './styles/index.scss' // global
 
 Vue.config.productionTip = false
+
+Vue.config.devtools = true // 是否使用devtools
 
 /* eslint-disable no-new */
 new Vue({
