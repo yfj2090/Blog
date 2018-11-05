@@ -1,7 +1,7 @@
 // 最佳字节于行高比，*显示器阅读距离（50 cm）以及最佳阅读角度（0.3）
 @mixin BaseFontSize($size) {
   font-size: $size;
-  line-height: $size + 8px;
+  line-height: $size + 0.571rem;
 }
 
 // 字体重量，*中文两种字体重量分别对应代码中的 400 和 500，在英文字体加粗采用 semibold 的字体重量，对应代码中的 600。

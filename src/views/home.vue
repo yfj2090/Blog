@@ -1,24 +1,32 @@
 <template>
   <div class="wrap">
-    <HomeHeader/>
+    <HomeHeader class="home-header" />
+    <HomeContent class="home-content" />
   </div>
 </template>
 
 <script>
 import HomeHeader from '@/views/components/header'
+import HomeContent from '@/views/components/homeContent'
 export default {
   components: {
-    HomeHeader
+    HomeHeader,
+    HomeContent
   },
-  data() {
-
-  }
+  data() {}
 }
 </script>
 
 <style lang="scss" scoped>
 .wrap {
-  width: 800px;
+  width: 50rem;
   margin: 0 auto;
+  background: $grey-1;
+  .home-header {
+    float: left;
+  }
+  .home-content {
+    float: left;
+  }
 }
 </style>

@@ -1,16 +1,41 @@
 @import './variables.scss';
 
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: #fff;
-  color: #555;
+  background: $grey-3;
+  color: $primaryTextBlack;
   font-size: $mainFontSize;
   font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif,
- "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 td,
@@ -43,12 +68,15 @@ var {
 }
 
 a {
-  color: $grey-10;
+  color: $mainColor1;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+a:hover,
+a:link,
+a:visited {
+  color: none;
+  text-decoration: none;
 }
 
 img {

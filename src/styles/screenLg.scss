@@ -1,0 +1,22 @@
+
+
+/*# start header.vue*/
+.header-container {
+  padding: 1rem;
+  .logo {
+    display: inline-block;
+    vertical-align: middle;
+
+  }
+  .nav {
+    display: inline-block;
+    margin-left: 100px;
+    vertical-align: middle;
+
+    li {
+      display: inline-block;
+      padding: 0 1rem;
+    }
+  }
+}
+/*# end header.vue*/
